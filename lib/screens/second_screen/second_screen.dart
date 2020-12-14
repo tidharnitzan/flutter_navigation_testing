@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_navigation_testing/widgets/application_scaffold.dart';
-import 'second_screen_bloc.dart';
-import 'second_screen_event.dart';
-import 'second_screen_state.dart';
+import 'bloc/second_screen_bloc.dart';
+import 'bloc/second_screen_event.dart';
+import 'bloc/second_screen_state.dart';
 
 class SecondScreen extends StatefulWidget {
   SecondScreen({Key key}) : super(key: key);
