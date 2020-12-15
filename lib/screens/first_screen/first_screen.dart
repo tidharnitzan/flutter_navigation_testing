@@ -44,14 +44,14 @@ class _FirstScreenState extends State<FirstScreen> {
                         child: Text('Go to dashboard screen'),
                         onPressed: () {
                           context
-                              .bloc<FirstScreenBloc>()
+                              .read<FirstScreenBloc>()
                               .add(FirstScreenGoToDashboardTapedEvent());
                         }),
                     RaisedButton(
                         child: Text('Go to second screen'),
                         onPressed: () {
                           context
-                              .bloc<FirstScreenBloc>()
+                              .read<FirstScreenBloc>()
                               .add(FirstScreenGoToSecondScreenTapedEvent());
                         }),
                   ],

@@ -61,7 +61,7 @@ class MainDrawerItemWidget extends StatelessWidget {
       child: ListTile(
         title: Text(item.header),
         onTap: () {
-          context.bloc<MainDrawerBloc>().add(
+          context.read<MainDrawerBloc>().add(
                 MainDrawerNavigationEvent(drawerItem: item),
               );
         },
