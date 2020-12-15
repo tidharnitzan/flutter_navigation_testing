@@ -19,7 +19,7 @@ class _FirstScreenState extends State<FirstScreen> {
   @override
   Widget build(BuildContext context) {
     return ApplicationScaffold(
-      'First Screen',
+      'First Screen YYY',
       BlocProvider<FirstScreenBloc>(
         create: (_) => FirstScreenBloc(),
         child: BlocConsumer<FirstScreenBloc, FirstScreenState>(
