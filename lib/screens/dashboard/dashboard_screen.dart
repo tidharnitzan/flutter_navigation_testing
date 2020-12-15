@@ -31,6 +31,8 @@ class _DashboardScreenState extends State<DashboardScreen> {
       BlocProvider<DashboardBloc>(
         create: (_) => _bloc,
         child: BlocConsumer<DashboardBloc, DashboardState>(
+          buildWhen: (previous, current) =>
+              !(current is DashboardNavigationState),
           builder: (context, state) {
             if (state is DashboardInitState) {
               return Container(

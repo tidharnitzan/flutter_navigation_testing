@@ -28,6 +28,8 @@ class _FirstScreenState extends State<FirstScreen> {
               Navigator.pushNamed(context, state.route);
             }
           },
+          buildWhen: (previous, current) =>
+              !(current is FirstScreenNavigationState),
           builder: (context, state) {
             if (state is FirstScreenInitState) {
               return Container(

@@ -32,6 +32,8 @@ class _SecondScreenState extends State<SecondScreen> {
       BlocProvider<SecondScreenBloc>(
         create: (_) => _bloc,
         child: BlocConsumer<SecondScreenBloc, SecondScreenState>(
+          buildWhen: (previous, current) =>
+              !(current is SecondScreenNavigationState),
           builder: (context, state) {
             if (state is SecondScreenInitState) {
               return Container(
