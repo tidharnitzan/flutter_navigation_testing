@@ -5,8 +5,7 @@ import 'first_screen_event.dart';
 import 'first_screen_state.dart';
 
 class FirstScreenBloc extends Bloc<FirstScreenEvent, FirstScreenState> {
-  @override
-  FirstScreenState get initialState => FirstScreenInitState();
+  FirstScreenBloc() : super(FirstScreenInitState());
 
   @override
   Stream<FirstScreenState> mapEventToState(FirstScreenEvent event) async* {

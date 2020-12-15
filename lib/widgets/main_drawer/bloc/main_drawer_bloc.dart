@@ -10,10 +10,7 @@ class MainDrawerBloc extends Bloc<MainDrawerEvent, MainDrawerState> {
   List<MainDrawerItem> _items = List<MainDrawerItem>();
   MainDrawerItem _currentItem;
 
-  @override
-  MainDrawerState get initialState => MainDrawerGetItemsState();
-
-  MainDrawerBloc() {
+  MainDrawerBloc() : super(MainDrawerGetItemsState()) {
     _items
         .add(MainDrawerItem(header: 'Dashboard', route: DashboardScreen.route));
     _items

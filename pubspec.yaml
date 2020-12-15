@@ -21,9 +21,8 @@ environment:
   sdk: ">=2.7.0 <3.0.0"
 
 dependencies:
-  bloc: ^4.0.0
-  flutter_bloc: ^4.0.0
-  bloc_test: ^5.1.0
+  bloc: ^6.1.1
+  flutter_bloc: ^6.1.1
   rflutter_alert: ^1.1.0
   flutter:
     sdk: flutter

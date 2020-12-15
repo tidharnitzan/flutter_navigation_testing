@@ -4,8 +4,7 @@ import 'second_screen_event.dart';
 import 'second_screen_state.dart';
 
 class SecondScreenBloc extends Bloc<SecondScreenEvent, SecondScreenState> {
-  @override
-  SecondScreenState get initialState => SecondScreenInitState();
+  SecondScreenBloc() : super(SecondScreenInitState());
 
   @override
   Stream<SecondScreenState> mapEventToState(SecondScreenEvent event) async* {

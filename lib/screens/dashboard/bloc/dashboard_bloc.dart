@@ -5,8 +5,7 @@ import 'dashboard_event.dart';
 import 'dashboard_state.dart';
 
 class DashboardBloc extends Bloc<DashboardEvent, DashboardState> {
-  @override
-  DashboardState get initialState => DashboardInitState();
+  DashboardBloc() : super(DashboardInitState());
 
   @override
   Stream<DashboardState> mapEventToState(DashboardEvent event) async* {
